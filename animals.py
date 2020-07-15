@@ -2,35 +2,40 @@ from datetime import date
 
 
 class Llama:
-  def __init__(self, name, species):
+  def __init__(self, name, species, shift):
     self.name = name
     self.species = species
     self.date_added = date.today()
     self.walking = True
+    self.shift = shift
 class Goat:
-  def __init__(self, name, species):
+  def __init__(self, name, species, shift):
     self.name = name
     self.species = species
     self.date_added = date.today()
     self.walking = True
+    self.shift = shift
 class Donkey:
-  def __init__(self, name, species):
+  def __init__(self, name, species, shift):
     self.name = name
     self.species = species
     self.date_added = date.today()
     self.walking = True
+    self.shift = shift
 class Duck:
-  def __init__(self, name, species):
+  def __init__(self, name, species, shift):
     self.name = name
     self.species = species
     self.date_added = date.today()
     self.walking = True
+    self.shift = shift
 class Horse:
-  def __init__(self, name, species):
+  def __init__(self, name, species, shfit):
     self.name = name
     self.species = species
     self.date_added = date.today()
     self.walking = True
+    self.shift = shift
 class Copperheads:
   def __init__(self, name, species):
     self.name = name
@@ -92,11 +97,12 @@ class Catfish:
     self.date_added = date.today()
     self.swimming = True
     
-candace = Llama("Candace", "Suri Alpaca")
-
+candace = Llama("Candace", "Suri Alpaca", "morning")
+print(f'{candace.name} the {candace.species} is available to pet during the {candace.shift} shift.')
 bill = Catfish("Bill", "Blue catfish")
 
 vinny = Vipers("Vinny", "Horned desert viper")
+
 
 
 
